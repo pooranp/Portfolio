@@ -1,0 +1,350 @@
+body {
+	overflow-x: hidden;
+	color: rgb(80, 89, 98);
+	background: rgb(244, 235, 208);
+}
+
+.navbar {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	padding-bottom: 0;
+}
+
+.navbar .nav-item {
+	margin: 0px 20px;
+	padding: 0px 20px;
+	border-style: none none solid none;
+	border-color: transparent;
+	border-width: 1px;
+}
+
+.navbar .nav-item:hover {
+	border-style: none none solid none;
+	border-color: rgba(255, 255, 255, 0.2);
+	border-width: 1px;
+}
+
+.navbar-brand {
+	font-size: 1.8rem;
+}
+
+.home-inner {
+	background-image: url('https://i.postimg.cc/CLQSrrSg/mountain-sunrise.jpg');
+}
+
+@keyframes appear {
+  from{
+    color: rgba(255, 255, 255, 0);
+	top: 50%;
+  }
+}
+
+.caption {
+	animation: appear 3s;
+	width: 100%;
+	max-width: 100%;
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	top: 20%;
+	z-index: 1;
+}
+
+.caption h3 {
+	text-transform: uppercase;
+	line-height: 2.5rem;
+	text-align: left;
+	font-size: 2.5rem;
+	padding: 0 3rem 2rem;
+}
+
+.caption h3 strong {
+	font-size: 3.2rem;
+}
+
+.btn {
+	border-width: 1px;
+	border-radius: 100;
+	padding: 0.6rem 4rem;
+	margin: 9rem;
+	top: 50%;
+	font-size: 1.3rem;
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn:hover {
+	color: rgba(0, 0, 0, 1);
+	background: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes flash {  
+    0% { opacity: 0.7;}
+    80% { opacity: 0.1;}
+    100% { opacity: 0.7;}
+}
+
+#homeBtn {
+	animation: flash 2s infinite;
+    display: none;
+	border-style: hidden;
+    position: fixed;
+    bottom: 1px;
+    right: 15px;
+    z-index: 99;
+    border-radius: 50px 50px 0 0;
+	color: rgba(0, 0, 0, 1);
+	background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+	padding: 0.2rem 1.7rem 0.5rem;
+    font-size: 2rem;
+}
+
+#homeBtn:hover {
+	color: rgba(255, 255, 255, 1);
+	background: rgba(0, 0, 0, 0.3); /* Add a dark-grey background on hover */
+}
+
+h3.heading {
+	text-align: center;
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	text-decoration: underline;
+	text-decoration-color: rgba(37, 35, 46, 0.4);
+}
+
+#about {
+	margin: 0;
+	color: #25232e;
+	padding: 3rem 0 5rem;
+}
+
+#about-text {
+	padding-right: 40px;
+	text-align: justify; 
+	color: #25232e;
+	line-height: 3.2rem;
+	padding-left: 80px;
+	padding-top: 20px;
+}
+
+#portrait-img {
+	background: rgba(255, 255, 255, 0);
+	border-radius: 15% 0 0 15%;
+	padding: 0;
+	width: 70vw;
+}
+
+.text {
+	font-size: 2vw;
+	text-align: justify;
+}
+
+.padding {
+	padding: 1rem 0;
+}
+
+img.portfolio {
+	max-width: 100%;
+}
+
+.no-padding .col-md-6{
+	padding: 0;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-img {
+	margin: 3rem auto 0;
+	border-style: hidden;
+	max-width: 50%;
+}
+
+#skills {
+	padding: 1rem 5rem 5rem;
+	background: rgb(229, 219, 188);
+}
+
+#portfolio {
+	padding: 1rem 5rem 5rem;
+	background: rgb(210, 192, 165);
+}
+
+#skills, #portfolio {
+	border-top-style: solid;
+	color: #25232e;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.05);
+}
+
+#contact {
+	padding-top: 20px;
+}
+
+#contact-2 {
+	margin: -20px 0;
+	color: white;
+	background-color: #25232e;
+}
+
+#contact-form {
+	text-align: center;
+}
+
+.contact-btn {
+	background-color: rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+	cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+	margin: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+
+.footer .row {
+	background-color: rgb(80, 89, 98);
+	padding: 1rem 2rem 3rem;
+	color: white;
+}
+
+.footer img {
+	height: 2rem;
+	margin: 1.5rem 0;
+}
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Media Query */
+@media only screen and (max-width: 738px) {
+	
+	.home-inner {
+		filter: brightness(60%);
+		background-image: url('https://i.postimg.cc/CLQSrrSg/mountain-sunrise.jpg');
+	}
+	
+	.row {
+/* 		set padding/margin to prevent horizontal scrolling */
+		padding-right: 0;
+		margin-right: 0;
+	}
+	
+	.navbar {
+		max-width: 100%;
+		position: absolute;
+		padding: 10px;
+		background: rgba(0,0,0,1);
+	}
+	
+	.navbar .nav-item {
+		margin: 0px 20px;
+		padding: 25px 20px;
+		text-align: center;
+	}
+	
+	.navbar #menu {
+		height: 100vh;
+		font-size: 30px;
+		background-color: rgba(0, 0, 0, 1);
+	}
+	
+	nav.foo {
+		display: block;
+	}
+	
+	.caption {
+		width: 100%;
+		text-transform: uppercase;
+		max-width: 100%;
+		font-weight: bold;
+		position: absolute;
+		top: 15%;
+		z-index: 1;
+	}
+	
+	@keyframes clarify {
+	    from {filter: blur(5px);}
+		to {filter: blur(0px);}
+	}
+	
+	.caption h3 {
+		color: rgba(255, 255, 255, 0.9);
+		animation: clarify 1.5s;
+		animation-timing-function: ease-out;
+		padding: 0 0.2rem 0;
+		font-size: 1.7rem;
+		text-align: left;
+	}
+	
+	.caption h3 strong {
+		font-size: 2.4rem;
+	}
+	
+	#line1 {
+		line-height: 0;
+	}
+	
+	#welcome-cap {
+		margin-top: 5rem;
+	}
+	
+	.btn {
+		display: none;
+	}
+		
+	#homeBtn, #homeBtn:hover {
+		display: none !important;
+		position: fixed;
+		bottom: 20px;
+		border: none;
+		outline: none;
+		color: black;
+		padding: 0;
+		border-radius: 100%;
+		font-size: 1.3rem;
+		background: none;
+	}
+
+	#portrait-img {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 650px){ 
+  .downBtn{
+    display: none;
+  }
+}
